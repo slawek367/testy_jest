@@ -1,14 +1,10 @@
 const Person = require('./person');
 
 class Client extends Person {
-    constructor(id, name, surrname, age) {
-        this.id = id;
-        this.name = name;
-        this.surrname = surrname;
-        this.age = age;
+    constructor(id, name, surrname) {
+        super(name, surrname)
+        this.id = id
     }
-
-    
 }
 
 module.exports = Client
